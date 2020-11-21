@@ -27,7 +27,7 @@ export default {
     let avatar = [];
 
     if (file && process.argv.slice(2)[0] === "local-storage") {
-      avatar.unshift(`${process.env.LOCAL_URL}/uploads/${file.key}`);
+      avatar.unshift(`${process.env.APP_URL}/uploads/${file.key}`);
     } else {
       avatar.unshift(file.location);
     }

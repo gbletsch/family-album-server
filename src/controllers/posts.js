@@ -14,7 +14,7 @@ export default {
     let image = [];
     // only in development
     if (file && process.argv.slice(2)[0] === "local-storage") {
-      image.unshift(`${process.env.LOCAL_URL}/uploads/${file.key}`);
+      image.unshift(`${process.env.APP_URL}/uploads/${file.key}`);
     } else {
       image.unshift(file.location);
     }
