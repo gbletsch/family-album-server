@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "nodemon src/server.js local-storage local-db",
     "dev-s3": "nodemon src/server.js s3 local-db",
-    "dev-s3-cloud_mongo": "nodemon src/server.js s3 cloud-mongo"
+    "dev-s3-cloud_mongo": "nodemon src/server.js s3 cloud-mongo",
+    "start": "node src/server.js s3 cloud-mongo"
   },
   "dependencies": {
     "aws-sdk": "^2.797.0",
