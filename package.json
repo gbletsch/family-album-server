@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js local-storage local-db",
+    "dev-s3": "nodemon src/server.js s3 local-db",
+    "dev-s3-cloud_mongo": "nodemon src/server.js s3 cloud-mongo"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.797.0",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.14",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
