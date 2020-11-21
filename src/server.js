@@ -38,7 +38,7 @@ mongoose
     console.log("error", error);
   });
 
-const server = app.listen(8080, () =>
+const server = app.listen(port, () =>
   console.log(`app running on port ${port}, using args ${args}`)
 );
 
