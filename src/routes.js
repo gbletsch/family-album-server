@@ -1,4 +1,4 @@
-import { Router } from "express";
+import express from "express";
 import multer from "multer";
 import crypto from "crypto";
 
@@ -9,7 +9,7 @@ import CommentsController from "./controllers/comments.js";
 import ReactionsController from "./controllers/reactions.js";
 import authorizeJwt from "./middleware/authorize_jwt.js";
 
-const routes = Router();
+const routes = express.Router();
 routes.get("/", (req, res) => {
   return res.send(crypto.randomBytes(10).toString("hex"));
 });
