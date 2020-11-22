@@ -38,12 +38,12 @@ mongoose
     console.log("error", error);
   });
 
-const server = app.listen(port, () =>
+app.listen(port, () =>
   console.log(`app running on port ${port}, using args ${args}`)
 );
 
-process.once("SIGUSR2", function () {
-  server.close(function () {
-    process.kill(process.pid, "SIGUSR2");
-  });
-});
+// process.once("SIGUSR2", function () {
+//   server.close(function () {
+//     process.kill(process.pid, "SIGUSR2");
+//   });
+// });
