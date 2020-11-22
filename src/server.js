@@ -16,7 +16,7 @@ app.use(morgan("dev"));
 app.use("/uploads", express.static(path.join("temp", "uploads")));
 app.use(routes);
 
-const port = process.env.PORT; //|| 8080;
+const port = process.env.PORT || 8080;
 const args = process.argv.slice(2);
 
 let mongo_connection_url = process.env.MONGODB_CONNECT_STRING;
